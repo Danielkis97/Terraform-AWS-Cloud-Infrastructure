@@ -1,0 +1,11 @@
+region         = "eu-north-1"
+ami            = "ami-079c4d86630be4b6a"
+instance_type  = "t3.micro"
+
+aws_access_key  = "your-access-key"
+aws_secret_key  = "your-secret-key"
+region          = "eu-north-1"
+ami             = "ami-079c4d86630be4b6a"
+instance_type   = "t3.micro"
+key_name        = "your-key-name"
+vpc_id          = "your-vpc-id"

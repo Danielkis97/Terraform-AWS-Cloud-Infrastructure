@@ -1,12 +1,24 @@
+
+![Terraform](https://img.shields.io/badge/Terraform-v1.9.5-blue?logo=terraform)
+![AWS Provider](https://img.shields.io/badge/AWS%20Provider-v4.67.0-orange?logo=amazon-aws)
+![AWS](https://img.shields.io/badge/AWS-Deployed-orange?logo=amazon-aws)
+![License](https://img.shields.io/github/license/Danielkis97/Host-a-simple-webpage-on-AWS)
+![Issues](https://img.shields.io/github/issues/Danielkis97/Host-a-simple-webpage-on-AWS)
+
 # AWS Infrastructure Deployment
+
+This repository provides a step-by-step guide to deploying a simple and scalable web application infrastructure on AWS using Terraform. The setup includes essential AWS services, ensuring high availability and automated scaling.
+
 
 ## Overview
 This project sets up a simple infrastructure on AWS using Terraform. The infrastructure includes a Virtual Private Cloud (VPC), subnets, an Internet Gateway, security groups, EC2 instances, an Elastic Load Balancer (ELB), and an Auto Scaling Group (ASG). The goal is to deploy a web application in a secure and scalable manner.
 
 ## UML Diagram
-The following UML diagram illustrates the structure of the AWS infrastructure deployed by this project:
+The following UML diagram illustrates the structure of the AWS infrastructure deployed:
 
-![UML Diagram](link_to_your_UML_diagram)
+![Development Phase UML Diagram](https://github.com/Danielkis97/Host-a-simple-webpage-on-AWS/blob/main/Development_Phase_UML_Diagram.png?raw=true)
+
+
 
 ## Infrastructure Explanation
 The infrastructure setup includes the following components:
@@ -44,6 +56,9 @@ The infrastructure setup includes the following components:
    instance_type  = "t3.micro"
    key_name       = "your-key-name"
    vpc_id         = "your-vpc-id"
+
+>[!WARNING]  
+>Do not commit your terraform.tfvars file to version control as it contains sensitive information.
 
 3. **Initialize Terraform:**
    ```sh
@@ -109,8 +124,18 @@ Here’s how you might interact with the deployed infrastructure:
 - **Access the Web Application:** After the infrastructure is deployed, navigate to the Load Balancer's DNS name in your web browser to view the web application.
 
 - **Scale the Application:** Trigger scaling by simulating high CPU usage on the EC2 instances, and observe how the Auto Scaling Group adjusts the number of running instances.
+ 
 
 > [!TIP]
 > Keep your Terraform state files secure, especially if you're working in a shared environment.
+
+
+## Development Environment
+
+The Terraform code for this project was developed using [PyCharm](https://www.jetbrains.com/pycharm/), ensuring a smooth and efficient coding experience. If you're looking for a powerful IDE to work with Terraform, PyCharm is a great choice.
+
+
+Happy Terraforming and Testing! 🚀
+
 
                   
